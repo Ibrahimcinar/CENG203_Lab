@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Labs">
+      <UniqueIdentifier>{28d2ad18-afba-47ac-b57c-4f467cc5c0ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LinkedList">
+      <UniqueIdentifier>{8f423db4-b405-4083-9f42-c80e567874c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stack">
+      <UniqueIdentifier>{6841bf13-5826-459d-bf86-4a4431c59915}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Labs\Week02.cpp">
+      <Filter>Labs</Filter>
+    </ClCompile>
+    <ClCompile Include="Labs\Week03.cpp">
+      <Filter>Labs</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedList\LinkedList.cpp">
+      <Filter>LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedList\CircularList.cpp">
+      <Filter>LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedList\DoublyLinkedList.cpp">
+      <Filter>LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="Stack\Stack.cpp">
+      <Filter>Stack</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Labs\Labs.h">
+      <Filter>Labs</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList\Node.h">
+      <Filter>LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList\LinkedList.h">
+      <Filter>LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList\CircularList.h">
+      <Filter>LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList\DNode.h">
+      <Filter>LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList\DoublyLinkedList.h">
+      <Filter>LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack\Stack.h">
+      <Filter>Stack</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
