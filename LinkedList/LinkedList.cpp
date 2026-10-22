@@ -164,7 +164,10 @@ void LinkedList::displayBackward() const
 
 void LinkedList::printBackward(const Node* node)
 {
-    // TODO: base case; recursive call on node->next; then print node->data
+    if (node == nullptr)
+        return;
+    printBackward(node->next);      // first the rest of the list ...
+    cout << node->data << " ";      // ... then this node
 }
 
 void LinkedList::reverse()
@@ -174,5 +177,10 @@ void LinkedList::reverse()
 
 Node* LinkedList::reverseFrom(Node* node)
 {
-    return node;                    // TODO
+    if (node == nullptr || node->next == nullptr)
+        return node;                // last node becomes the new head
+    Node* newHead = reverseFrom(node->next);
+    node->next->next = node;        // turn the link around
+    node->next = nullptr;
+    return newHead;
 }
