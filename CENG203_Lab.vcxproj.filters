@@ -10,6 +10,9 @@
     <Filter Include="Stack">
       <UniqueIdentifier>{6841bf13-5826-459d-bf86-4a4431c59915}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Recursion">
+      <UniqueIdentifier>{5cea6fde-9390-42ce-bbf5-f148724597b4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -17,6 +20,9 @@
       <Filter>Labs</Filter>
     </ClCompile>
     <ClCompile Include="Labs\Week03.cpp">
+      <Filter>Labs</Filter>
+    </ClCompile>
+    <ClCompile Include="Labs\Week05.cpp">
       <Filter>Labs</Filter>
     </ClCompile>
     <ClCompile Include="LinkedList\LinkedList.cpp">
@@ -30,6 +36,9 @@
     </ClCompile>
     <ClCompile Include="Stack\Stack.cpp">
       <Filter>Stack</Filter>
+    </ClCompile>
+    <ClCompile Include="Recursion\Recursion.cpp">
+      <Filter>Recursion</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -53,6 +62,9 @@
     </ClInclude>
     <ClInclude Include="Stack\Stack.h">
       <Filter>Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="Recursion\Recursion.h">
+      <Filter>Recursion</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

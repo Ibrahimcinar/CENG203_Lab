@@ -154,3 +154,25 @@ void LinkedList::merge(LinkedList& other)                   // Q7
     }
     other.head = nullptr;                                   // other no longer owns them
 }
+
+// =============================== Week 5 ===============================
+void LinkedList::displayBackward() const
+{
+    printBackward(head);
+    cout << endl;
+}
+
+void LinkedList::printBackward(const Node* node)
+{
+    // TODO: base case; recursive call on node->next; then print node->data
+}
+
+void LinkedList::reverse()
+{
+    head = reverseFrom(head);
+}
+
+Node* LinkedList::reverseFrom(Node* node)
+{
+    return node;                    // TODO
+}
