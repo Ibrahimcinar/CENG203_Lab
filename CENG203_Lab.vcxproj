@@ -131,11 +131,15 @@
     <ClCompile Include="Labs\Week02.cpp" />
     <ClCompile Include="Labs\Week03.cpp" />
     <ClCompile Include="Labs\Week05.cpp" />
+    <ClCompile Include="Labs\Week06.cpp" />
     <ClCompile Include="LinkedList\LinkedList.cpp" />
     <ClCompile Include="LinkedList\CircularList.cpp" />
     <ClCompile Include="LinkedList\DoublyLinkedList.cpp" />
     <ClCompile Include="Stack\Stack.cpp" />
     <ClCompile Include="Recursion\Recursion.cpp" />
+    <ClCompile Include="Tree\TreeUtils.cpp" />
+    <ClCompile Include="Tree\BST.cpp" />
+    <ClCompile Include="Tree\ExpressionTree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Labs\Labs.h" />
@@ -146,6 +150,10 @@
     <ClInclude Include="LinkedList\DoublyLinkedList.h" />
     <ClInclude Include="Stack\Stack.h" />
     <ClInclude Include="Recursion\Recursion.h" />
+    <ClInclude Include="Tree\TreeNode.h" />
+    <ClInclude Include="Tree\TreeUtils.h" />
+    <ClInclude Include="Tree\BST.h" />
+    <ClInclude Include="Tree\ExpressionTree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

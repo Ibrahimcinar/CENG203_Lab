@@ -13,6 +13,9 @@
     <Filter Include="Recursion">
       <UniqueIdentifier>{5cea6fde-9390-42ce-bbf5-f148724597b4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tree">
+      <UniqueIdentifier>{bdd8c6fa-071b-43c8-846b-c09c2cb74688}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -23,6 +26,9 @@
       <Filter>Labs</Filter>
     </ClCompile>
     <ClCompile Include="Labs\Week05.cpp">
+      <Filter>Labs</Filter>
+    </ClCompile>
+    <ClCompile Include="Labs\Week06.cpp">
       <Filter>Labs</Filter>
     </ClCompile>
     <ClCompile Include="LinkedList\LinkedList.cpp">
@@ -39,6 +45,15 @@
     </ClCompile>
     <ClCompile Include="Recursion\Recursion.cpp">
       <Filter>Recursion</Filter>
+    </ClCompile>
+    <ClCompile Include="Tree\TreeUtils.cpp">
+      <Filter>Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="Tree\BST.cpp">
+      <Filter>Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="Tree\ExpressionTree.cpp">
+      <Filter>Tree</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -65,6 +80,18 @@
     </ClInclude>
     <ClInclude Include="Recursion\Recursion.h">
       <Filter>Recursion</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree\TreeNode.h">
+      <Filter>Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree\TreeUtils.h">
+      <Filter>Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree\BST.h">
+      <Filter>Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree\ExpressionTree.h">
+      <Filter>Tree</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
