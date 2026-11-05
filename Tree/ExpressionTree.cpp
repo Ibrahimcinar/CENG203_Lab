@@ -17,7 +17,17 @@ ExprNode* buildFromPostfix(const string& postfix)
     stringstream ss(postfix);
     string token;
     while (ss >> token) {           // one token at a time: "3", "4", "+"
-        // TODO: make a node; operator -> pop right, pop left; push it
+        ExprNode* node = new ExprNode;
+        node->data = token;
+        node->left = nullptr;
+        node->right = nullptr;
+        if (isOperator(token)) {
+            node->right = st.top();     // top of the stack = right operand
+            st.pop();
+            node->left = st.top();
+            st.pop();
+        }
+        st.push(node);
     }
     return st.empty() ? nullptr : st.top();
 }
@@ -43,12 +53,31 @@ void printPostfix(const ExprNode* node)
 // ============================ Q9 ============================
 void printInfix(const ExprNode* node)
 {
-    // TODO: "(" left " op " right ")" for operators, the number otherwise
+    if (node == nullptr)
+        return;
+    if (isOperator(node->data)) {
+        cout << "(";
+        printInfix(node->left);
+        cout << " " << node->data << " ";
+        printInfix(node->right);
+        cout << ")";
+    }
+    else
+        cout << node->data;
 }
 
 double evaluate(const ExprNode* node)
 {
-    return 0.0;                     // TODO: number -> stod; else combine
+    if (!isOperator(node->data))
+        return stod(node->data);        // a leaf is a number
+    double a = evaluate(node->left);    // children first: postorder
+    double b = evaluate(node->right);
+    if (node->data == "+") return a + b;
+    if (node->data == "-") return a - b;
+    if (node->data == "*") return a * b;
+    if (b == 0)
+        throw runtime_error("Division by zero");
+    return a / b;
 }
 
 void destroyExpr(ExprNode* node)
